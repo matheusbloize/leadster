@@ -19,3 +19,7 @@ npm run dev
 
 Abra um navegador e entre na URL: [http://localhost:3000](http://localhost:3000)
 
+## Decisões
+
+- Implementação do ESLint, com a configuração padrão da Rocketseat [@rocketseat/eslint-config], para a facilitação e padronização do código
+- Inicialização da construção do projeto com a abordagem Mobile First, focando primeiramente em dispositivos móveis
