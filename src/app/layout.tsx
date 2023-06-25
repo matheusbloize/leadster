@@ -1,9 +1,7 @@
+'use client'
 import './globals.css'
 import { ReactNode } from 'react'
-// eslint-disable-next-line camelcase
-import { Plus_Jakarta_Sans } from 'next/font/google'
-
-const font = Plus_Jakarta_Sans({ subsets: ['latin'] })
+import StyledComponentsRegistry from '@/lib/registry'
 
 export const metadata = {
   title: 'Leadster',
@@ -14,7 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-BR">
-      <body className={font.className}>{children}</body>
+      <body>
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+      </body>
     </html>
   )
 }
