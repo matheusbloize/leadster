@@ -8,7 +8,9 @@ import { StyledBottomSection } from '@/components/styles/StyledSection'
 const BottomSection = () => {
   return (
     <StyledBottomSection>
-      <Image src={img_comp} alt="Comparativo" />
+      <div className="bottom-section-img">
+        <Image src={img_comp} alt="Comparativo" />
+      </div>
       <div className="bottom-section-info">
         <div className="bottom-section-info-top">
           <h2>

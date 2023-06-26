@@ -7,6 +7,7 @@ export const StyledMain = styled.main`
   .main-top {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1em;
     border-bottom: 1px solid #d5d9dd;
   }
@@ -70,6 +71,14 @@ export const StyledMain = styled.main`
     &:hover {
       color: #007bff;
       border-color: #007bff;
+    }
+  }
+
+  @media screen and (min-width: 48em) {
+    .main-videos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
     }
   }
 `

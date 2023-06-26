@@ -18,3 +18,8 @@ body {
 button, select, input {
   font-family: 'Plus Jakarta Sans', 'Lucida Sans';
 }
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}

@@ -38,22 +38,77 @@ export const StyledTopSection = styled.section`
     font-size: 2.5em;
   }
 
+  div h2 {
+    margin-top: 0.4em;
+  }
+
   p {
     width: 80%;
     color: #1c3c50;
     font-weight: 500;
     font-size: 0.85em;
+    margin-top: 0.5em;
   }
 
   p span {
     font-weight: 700;
   }
+
+  @media screen and (min-width: 48em) {
+    height: 20em;
+
+    div span {
+      font-size: 0.7em;
+    }
+
+    div h2 {
+      font-size: 2em;
+    }
+
+    div h1 {
+      font-size: 3.5em;
+    }
+
+    p {
+      width: auto;
+    }
+  }
+
+  @media screen and (min-width: 64em) {
+    div {
+      width: 50%;
+    }
+
+    div h2 {
+      font-size: 2.2em;
+    }
+
+    div h1 {
+      font-size: 4em;
+    }
+  }
 `
 
 export const StyledBottomSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #f0f8ff;
 
-  img {
+  .bottom-section-img,
+  .bottom-section-info {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bottom-section-info {
+    flex-direction: column;
+  }
+
+  .bottom-section-img img {
     width: 100%;
     height: 100%;
   }
@@ -69,11 +124,6 @@ export const StyledBottomSection = styled.section`
 
   p span {
     font-weight: 700;
-  }
-
-  .bottom-section-info {
-    width: 80%;
-    margin: 0 auto;
   }
 
   .bottom-section-info-top {
@@ -93,15 +143,16 @@ export const StyledBottomSection = styled.section`
     border: none;
     background-color: #0083ff;
     color: #fff;
-    padding: 1.2em 1em;
+    padding: 1.2em 1.6em;
     font-weight: 700;
     text-transform: uppercase;
     border-radius: 1.8em;
-  }
+    transition: 0.2s;
+    cursor: pointer;
 
-  .bottom-section-info-center img {
-    width: 100%;
-    height: 100%;
+    &:hover {
+      scale: 1.05;
+    }
   }
 
   .bottom-section-info-bottom {
@@ -130,5 +181,26 @@ export const StyledBottomSection = styled.section`
     width: 5em;
     height: 1em;
     margin-right: 0.2em;
+  }
+
+  @media screen and (min-width: 48em) {
+    img:nth-child(1) {
+      width: 75%;
+      height: 75%;
+    }
+
+    .bottom-section-info-bottom-card img {
+      width: 1em;
+      height: 1em;
+    }
+
+    .bottom-section-info-bottom-review img {
+      width: 5em;
+      height: 1em;
+    }
+  }
+
+  @media screen and (min-width: 64em) {
+    flex-direction: row;
   }
 `

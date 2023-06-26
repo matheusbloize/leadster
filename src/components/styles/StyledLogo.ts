@@ -5,4 +5,10 @@ export const StyledLogo = styled.div`
     width: 100%;
     height: 100%;
   }
+
+  width: 30%;
+
+  @media screen and (min-width: 48em) {
+    width: 15%;
+  }
 `

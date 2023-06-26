@@ -27,6 +27,19 @@ export const StyledVideo = styled.div`
     transition: 0.5s;
   }
 
+  div::after {
+    content: '';
+    width: 100%;
+    height: 235%;
+    position: absolute;
+    top: -10.55em;
+    left: 0em;
+    background-color: rgb(157, 213, 254);
+    mix-blend-mode: multiply;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+  }
+
   &:hover {
     p {
       color: #059cff;
@@ -44,5 +57,13 @@ export const StyledVideo = styled.div`
       border-top-left-radius: 1em;
       border-top-right-radius: 1em;
     }
+  }
+
+  @media screen and (min-width: 48em) {
+    width: 40%;
+  }
+
+  @media screen and (min-width: 90em) {
+    width: 30%;
   }
 `

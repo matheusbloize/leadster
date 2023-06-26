@@ -10,10 +10,17 @@ export const StyledFooter = styled.footer`
   }
 
   .footer-top {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
   }
 
-  img {
+  .footer-top div {
+    width: 40%;
+  }
+
+  .footer-top img {
     width: 100%;
     height: 100%;
   }
@@ -37,6 +44,37 @@ export const StyledFooter = styled.footer`
     text-decoration: none;
     color: #00b1f5;
   }
+
+  @media screen and (min-width: 48em) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+
+  @media screen and (min-width: 64em) {
+    .footer-copyright {
+      flex-direction: row;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 5em;
+    }
+  }
+
+  @media screen and (min-width: 90em) {
+    .footer-top div {
+      width: 75%;
+    }
+  }
 `
 
 export const StyledFooterLink = styled.div`
@@ -54,15 +92,27 @@ export const StyledFooterLink = styled.div`
 
   .footer-icons {
     display: flex;
-    gap: 2em;
+    gap: 2.5em;
     margin-bottom: 1em;
   }
 
   .footer-icons svg {
     background-color: #f7f8fb;
     border-radius: 50%;
-    padding: 0.25em;
-    scale: 2;
+    padding: 0.3em;
+    scale: 2.5;
     color: #838eab;
+  }
+
+  @media screen and (min-width: 48em) {
+    width: 35%;
+  }
+
+  @media screen and (min-width: 64em) {
+    width: 25%;
+
+    .footer-copyright {
+      flex-direction: row;
+    }
   }
 `
