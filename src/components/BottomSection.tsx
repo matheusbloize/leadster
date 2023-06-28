@@ -14,7 +14,8 @@ const BottomSection = () => {
       <div className="bottom-section-info">
         <div className="bottom-section-info-top">
           <h2>
-            Pronto para triplicar sua <strong>Geração de Leads?</strong>
+            Pronto para triplicar sua <br />
+            <strong>Geração de Leads?</strong>
           </h2>
           <p>
             Criação e ativação em <span>4 minutos.</span>

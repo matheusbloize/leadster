@@ -15,8 +15,9 @@ body {
   font-family: 'Plus Jakarta Sans', 'Lucida Sans';
 }
 
-button, select, input {
+button, select, input, option {
   font-family: 'Plus Jakarta Sans', 'Lucida Sans';
+  color: #1C3C50;
 }
 
 img {

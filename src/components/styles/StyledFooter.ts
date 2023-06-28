@@ -16,21 +16,8 @@ export const StyledFooter = styled.footer`
     margin-bottom: 1em;
   }
 
-  .footer-top div {
-    width: 40%;
-  }
-
-  .footer-top img {
-    width: 100%;
-    height: 100%;
-  }
-
   span {
     font-weight: 700;
-  }
-
-  .links {
-    border-bottom: 1px solid #d5d9dd;
   }
 
   .footer-copyright {
@@ -38,6 +25,9 @@ export const StyledFooter = styled.footer`
     display: flex;
     flex-direction: column;
     gap: 1em;
+    border-top: 1px solid #d5d9dd;
+    padding-top: 2em;
+    padding-bottom: 1em;
   }
 
   .footer-copyright-info a {
@@ -64,6 +54,7 @@ export const StyledFooter = styled.footer`
     }
 
     .links {
+      width: 75%;
       display: flex;
       flex-wrap: nowrap;
       gap: 5em;
@@ -71,8 +62,11 @@ export const StyledFooter = styled.footer`
   }
 
   @media screen and (min-width: 90em) {
-    .footer-top div {
-      width: 75%;
+    width: 100%;
+
+    .footer-copyright {
+      width: 100%;
+      justify-content: center;
     }
   }
 `
@@ -81,6 +75,19 @@ export const StyledFooterLink = styled.div`
   display: flex;
   flex-direction: column;
   margin: 1em 0;
+
+  a {
+    text-decoration: none;
+    transition: 0.4s;
+  }
+
+  a:hover {
+    scale: 1.1;
+
+    p {
+      color: #00a9ff;
+    }
+  }
 
   span {
     margin-bottom: 1.5em;
@@ -94,6 +101,7 @@ export const StyledFooterLink = styled.div`
     display: flex;
     gap: 2.5em;
     margin-bottom: 1em;
+    margin-left: 1em;
   }
 
   .footer-icons svg {
@@ -114,5 +122,10 @@ export const StyledFooterLink = styled.div`
     .footer-copyright {
       flex-direction: row;
     }
+  }
+
+  @media screen and (min-width: 90em) {
+    width: fit-content;
+    margin-bottom: 2em;
   }
 `

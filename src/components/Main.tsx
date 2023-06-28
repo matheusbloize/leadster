@@ -32,7 +32,6 @@ const Main = () => {
         <Video />
         <Video />
       </div>
-      <hr />
       <div className="main-page">
         <p>Página</p>
         <button>1</button>

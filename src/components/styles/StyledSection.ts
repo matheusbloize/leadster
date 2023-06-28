@@ -21,7 +21,7 @@ export const StyledTopSection = styled.section`
     color: #0084ff;
     border: 0.25em solid #0084ff;
     border-radius: 1em;
-    border-bottom-left-radius: 0.2em;
+    border-bottom-left-radius: 0.3em;
     padding: 0.4em 1.4em;
     font-weight: 700;
     text-transform: uppercase;
@@ -42,10 +42,18 @@ export const StyledTopSection = styled.section`
     margin-top: 0.4em;
   }
 
+  div img {
+    position: absolute;
+    left: 18em;
+    top: 4.2em;
+    width: 1.5em;
+    height: 1em;
+  }
+
   p {
-    width: 80%;
+    width: 75%;
     color: #1c3c50;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.85em;
     margin-top: 0.5em;
   }
@@ -69,22 +77,30 @@ export const StyledTopSection = styled.section`
       font-size: 3.5em;
     }
 
+    div img {
+      left: 25.5em;
+      top: 5.5em;
+      width: 2em;
+      height: 1.5em;
+    }
+
     p {
       width: auto;
     }
   }
 
   @media screen and (min-width: 64em) {
-    div {
-      width: 50%;
-    }
-
     div h2 {
       font-size: 2.2em;
     }
 
     div h1 {
       font-size: 4em;
+    }
+
+    div img {
+      left: 29.5em;
+      top: 6em;
     }
   }
 `
@@ -202,5 +218,25 @@ export const StyledBottomSection = styled.section`
 
   @media screen and (min-width: 64em) {
     flex-direction: row;
+  }
+
+  @media screen and (min-width: 90em) {
+    .bottom-section-info {
+      align-items: flex-start;
+    }
+
+    .bottom-section-info-top h2 {
+      font-size: 2.2em;
+      margin-bottom: 0.2em;
+    }
+
+    .bottom-section-info-center,
+    .bottom-section-info-bottom {
+      flex-direction: row;
+    }
+
+    p {
+      margin-right: 0.3em;
+    }
   }
 `

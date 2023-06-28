@@ -7,13 +7,9 @@ export const StyledButton = styled.button`
   border: 1px solid #1c3c50;
   background-color: #fff;
   font-weight: 500;
-  /* margin-right: 1em; */
 
   &:hover {
     border-color: #00a9ff;
     color: #00a9ff;
   }
-
-  /* selected */
-  /* background-color: #007EFF; */
 `

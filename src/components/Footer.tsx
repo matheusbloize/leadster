@@ -50,7 +50,9 @@ const Footer = () => {
         <div className="footer-copyright-info">
           <p>
             Copyright &copy; 2015 - 2022 Todos os direitos reservados |{' '}
-            <a href="#">Leadster</a>
+            <a href="https://leadster.com.br/" target="_blank" rel="noreferrer">
+              Leadster
+            </a>
           </p>
         </div>
         <div className="footer-copyright-address">

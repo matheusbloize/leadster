@@ -15,9 +15,27 @@ const FooterLink = (props: Props) => {
       {props.icons && (
         <div className="footer-icons">
           <>
-            <BiLogoLinkedin />
-            <BiLogoFacebook />
-            <BiLogoInstagram />
+            <a
+              href="https://br.linkedin.com/company/leadster-platform"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BiLogoLinkedin />
+            </a>
+            <a
+              href="https://web.facebook.com/leadsterplatform/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BiLogoFacebook />
+            </a>
+            <a
+              href="https://www.instagram.com/leadster.com.br/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BiLogoInstagram />
+            </a>
           </>
         </div>
       )}
@@ -27,11 +45,26 @@ const FooterLink = (props: Props) => {
               {index % 2 === 0 ? (
                 <strong>{value}</strong>
               ) : (
-                <p key={value}>{value}</p>
+                <a
+                  href="mailto:contato@leadster.com.br"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <p key={value}>{value}</p>
+                </a>
               )}
             </>
           ))
-        : props.values.map((value) => <p key={value}>{value}</p>)}
+        : props.values.map((value) => (
+            <a
+              key={value}
+              href="https://leadster.com.br/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p>{value}</p>
+            </a>
+          ))}
     </StyledFooterLink>
   )
 }

@@ -4,5 +4,5 @@ export const StyledHeader = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5em;
+  height: 6em;
 `
