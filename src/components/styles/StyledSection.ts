@@ -165,9 +165,13 @@ export const StyledBottomSection = styled.section`
     border-radius: 1.8em;
     transition: 0.2s;
     cursor: pointer;
+    border: 0.1em solid transparent;
 
     &:hover {
       scale: 1.05;
+      background-color: #fff;
+      border-color: #0083ff;
+      color: #0083ff;
     }
   }
 

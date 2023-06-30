@@ -30,7 +30,7 @@ export const StyledFooter = styled.footer`
     padding-bottom: 1em;
   }
 
-  .footer-copyright-info a {
+  .footer-copyright a {
     text-decoration: none;
     color: #00b1f5;
   }
@@ -110,6 +110,11 @@ export const StyledFooterLink = styled.div`
     padding: 0.3em;
     scale: 2.5;
     color: #838eab;
+
+    &:hover {
+      background-color: #02aeef;
+      color: #fff;
+    }
   }
 
   @media screen and (min-width: 48em) {

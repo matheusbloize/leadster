@@ -43,3 +43,11 @@ Abra um navegador e entre na URL: [http://localhost:3000](http://localhost:3000)
 - data: dados
 
 - lib: regra utilização do styled components
+
+## Experiência desenvolvendo
+
+Gostei do desafio em geral.
+
+Primeira vez usando styled components, achei bem interessante.
+
+A questão dos commits foi algo que não tinha parado focar antigamente, certamente vou continuar me aprimorando para deixar mais descritivo.

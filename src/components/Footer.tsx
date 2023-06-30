@@ -58,8 +58,10 @@ const Footer = () => {
         </div>
         <div className="footer-copyright-address">
           <p>
-            Rua José Loureiro, 464 - Centro - Curitiba PR - CEP: 80010-000 |
-            Termos de uso
+            Rua José Loureiro, 464 - Centro - Curitiba PR - CEP: 80010-000 |{' '}
+            <a href="https://leadster.com.br/" target="_blank" rel="noreferrer">
+              Termos de uso
+            </a>
           </p>
         </div>
       </div>
