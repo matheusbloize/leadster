@@ -1,5 +1,9 @@
 # Leadster
 
+## Deploy
+
+Link: https://leadster-matheusbloize.vercel.app/
+
 ## Instruções para rodar o projeto
 
 Abra seu terminal e execute o seguinte comando:
