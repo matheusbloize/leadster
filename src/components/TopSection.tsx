@@ -1,6 +1,9 @@
-import { StyledTopSection } from '@/components/styles/StyledSection'
+// Images
 import Image from 'next/image'
 import img_asset from '@/assets/images/asset.png'
+
+// Components
+import { StyledTopSection } from '@/components/styles/StyledSection'
 
 const TopSection = () => {
   return (

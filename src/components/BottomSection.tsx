@@ -1,8 +1,11 @@
+// Images
 import Image from 'next/image'
 import img_comp from '@/assets/images/comparative.png'
 import img_stamp from '@/assets/images/RD_stamp.png'
 import img_card from '@/assets/images/card.png'
 import img_rating from '@/assets/images/rating.png'
+
+// Components
 import { StyledBottomSection } from '@/components/styles/StyledSection'
 
 const BottomSection = () => {

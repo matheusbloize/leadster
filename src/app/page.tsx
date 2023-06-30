@@ -1,4 +1,5 @@
 'use client'
+
 import Header from '@/components/Header'
 import Section1 from '@/components/TopSection'
 import Section2 from '@/components/BottomSection'

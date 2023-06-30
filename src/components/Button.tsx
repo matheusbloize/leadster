@@ -1,3 +1,4 @@
+// Components
 import { StyledButton } from '@/components/styles/StyledButton'
 
 interface Props {

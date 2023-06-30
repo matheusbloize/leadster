@@ -1,5 +1,8 @@
+// Images
 import Image from 'next/image'
 import img_logo from '@/assets/images/logo.png'
+
+// Components
 import { StyledLogo } from '@/components/styles/StyledLogo'
 
 const Logo = () => {

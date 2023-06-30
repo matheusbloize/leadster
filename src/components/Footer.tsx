@@ -1,5 +1,6 @@
 'use client'
 
+// Components
 import Logo from '@/components/Logo'
 import { StyledFooter } from '@/components/styles/StyledFooter'
 import FooterLink from '@/components/FooterLink'

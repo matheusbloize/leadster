@@ -1,5 +1,7 @@
+// Components
 import { BiLogoFacebook, BiLogoInstagram, BiLogoLinkedin } from 'react-icons/bi'
 import { StyledFooterLink } from '@/components/styles/StyledFooter'
+import React from 'react'
 
 interface Props {
   title: string
@@ -41,23 +43,24 @@ const FooterLink = (props: Props) => {
       )}
       {props.bold
         ? props.values.map((value, index) => (
-            <>
+            <React.Fragment key={index}>
               {index % 2 === 0 ? (
                 <strong>{value}</strong>
               ) : (
                 <a
+                  key={value}
                   href="mailto:contato@leadster.com.br"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <p key={value}>{value}</p>
+                  <p>{value}</p>
                 </a>
               )}
-            </>
+            </React.Fragment>
           ))
-        : props.values.map((value) => (
+        : props.values.map((value, index) => (
             <a
-              key={value}
+              key={index}
               href="https://leadster.com.br/"
               target="_blank"
               rel="noreferrer"
