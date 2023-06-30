@@ -23,3 +23,19 @@ Abra um navegador e entre na URL: [http://localhost:3000](http://localhost:3000)
 
 - Implementação do ESLint, com a configuração padrão da Rocketseat [@rocketseat/eslint-config], para a facilitação e padronização do código
 - Inicialização da construção do projeto com a abordagem Mobile First, focando primeiramente em dispositivos móveis
+
+## Organização das pastas
+
+- assets: arquivos
+
+  - fonts: fontes
+
+  - images: imagens
+
+- components: componentes
+
+  - styles: styled components
+
+- data: dados
+
+- lib: regra utilização do styled components
